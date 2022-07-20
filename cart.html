@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart page</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+      #main {
+        margin: auto;
+        width: 65%;
+        /* height: 700px; */
+        display: flex;
+        justify-content: space-between;
+      }
+      #cart_product_show {
+        width: 60%;
+        height: 100%;
+      }
+      #cart_structure {
+        width: 30%;
+        height: 100%;
+      }
+      #naming {
+        display: flex;
+        justify-content: space-between;
+      }
+      #naming > h1 {
+        margin-top: -0px;
+      }
+      #show_product{
+        height: 100px;
+        border: 1px solid green;
+        margin-bottom: 60px;
+      }
+      /* cart structure part */
+
+      #second_product{
+       
+        height: 100px;
+        border: 1px solid blue;
+        margin-bottom: 60px;
+      }
+
+      #offers{
+        width: 100%;
+        height: 50px;
+        border: 2px solid #10847e;
+        border-radius: 5px;
+      }
+
+      #add_address{
+        width: 100%;
+        height: 50px;
+        background-color: #10847e;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 20px;
+
+      }
+      #dicount_pic{
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+      }
+      #price>div{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -15px;
+       
+      }
+      /* #price>div>h4{
+        margin-top: 10px;
+      } */
+
+      #offer_dis{
+        width: 100%;
+        margin-top: 10px;
+      }
+      #senetize{
+        width: 100%;
+        margin-top: 10px;
+      }
+      #notes{
+        width: 99%;
+        height: 70px;
+        margin-top: 15px;
+        
+      }
+      #list1{
+        line-height: 26px;
+        color: #67655e;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      #cart_foot{
+        width: 100%;
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="cart_product_show">
+
+        <div id="naming">
+          <h1>3 Items In Cart</h1>
+          <p>Prices are indicative</p>
+        </div>
+
+        <!-- show product -->
+        <div id="show_product">
+
+        </div>
+        <p><b>Customers who bought above items also bought</b></p>
+
+        <div id="second_product">
+            
+        </div>
+
+        <!-- rest things -->
+        <h2>Additional Notes</h2>
+        <input type="text" placeholder="Add your additional note regarding your order" name="" id="notes">
+
+        <ul id="list1">
+            <li>A licensed pharmacy would be delivering your order basis availability of product & fastest delivery.  Details</li>
+            <li>Prices are indicative and may change after billing</li>
+            <li>PharmEasy is a technology platform to connect sellers and buyers and is not involved in sales of any product. Offer for sale on the products and services are provided/sold by the sellers only. For detail read  Terms and Conditions</li>
+
+        </ul>
+
+      </div>
+
+      <div id="cart_structure">
+            <select name="" id="offers">
+                <option selected disabled>Apply Coupon / View Offers</option>
+                <option value="masai">MASAI 30%</option>
+                <option value="festival">Festival 20%</option>
+            </select>
+            
+
+            <button id="add_address">Add delivery address</button>
+            <img src="./img/discount.png" id="dicount_pic" alt="">
+
+            <h3>Order Summary</h3>
+
+            <div id="price">
+                <div>
+                    <p>cart value</p>
+                    <p>199.50</p>
+                </div>
+                <div>
+                    <p>Delivery charge</p>
+                    <p>99.50</p>
+                </div>
+                <div>
+                    <p>Total charge</p>
+                    <p>299.00</p>
+                </div>
+            </div>
+
+            <img src="./img/offer_dis.png" id="offer_dis" alt="">
+            <img src="./img/senetize.png" id="senetize" alt="">
+      </div>
+    </div>
+
+    <img src="./img/cart_foot.png" id="cart_foot" alt="">
+  </body>
+</html>

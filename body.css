@@ -1,0 +1,136 @@
+#slideimages {
+  /* border:2px solid black; */
+  height: 300px;
+  /* margin-top: 10px; */
+}
+
+#con1 {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  grid-template-columns: repeat(3, 34%);
+  grid-template-rows: 200px;
+  justify-content: space-evenly;
+  gap: 40px;
+  /* border: 2px solid black; */
+  /* padding: 20px; */
+}
+#con1 > div {
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  margin: 0px;
+}
+a > img {
+  width: 420px;
+  height: 197px;
+  display: block;
+  border-radius: 5px;
+}
+.imgs {
+  width: 321%;
+  margin-top: 1px;
+  border-radius: 5px;
+}
+
+#offers1 {
+  display: flex;
+  justify-content: space-between;
+}
+#sample {
+  display: flex;
+}
+h3 {
+  font-family: sans-serif;
+}
+/* PRODUCTS */
+.product-container {
+  /* border: 2px solid black; */
+  height: 150px;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: repeat(16, 350px);
+  grid-template-rows: repeat(1, 140px);
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.product-container > div {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* fetures */
+
+#featurebrands {
+  /* border:2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 70px 0px;
+  gap: 5px;
+  width: 92.7%;
+  height: 300px;
+  margin: auto;
+  color: rgb(75, 72, 72);
+  padding: 5px;
+}
+
+#featurebrands1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featurebrands2 {
+  /* border: 2px solid black; */
+  height: 220px;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: repeat(34, 180px);
+  grid-template-rows: repeat(1, 0px);
+  gap: 18px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: space-evenly;
+}
+.featurebrands2 > div {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.featurebrands2::-webkit-scrollbar {
+  display: none;
+}
+#feature_brand_images {
+  border-radius: 10px;
+  margin-left: 0px;
+}
+#feature_brand_images:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

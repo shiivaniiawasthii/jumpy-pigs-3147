@@ -1,0 +1,49 @@
+*{
+    background-color: #F4F7FB;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    /* color: gray; */
+    background-color: #F4F7FB;
+    /* padding: 10px 0px; */
+
+}
+#container h2{
+     color:#4F585E ;
+     font-size: 17px;
+}
+#container h3{
+    font-size: 15px;
+    color:#464849;
+    font-weight: 100;
+}
+#logo-1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#logo-1>img{
+    width: 100%;
+    height: 50px;
+}
+#payment{
+    background-color:#F4F7FB ;
+    
+}
+#payment_partners{
+    display: flex;
+   
+}
+#payment>div img{
+   width: 4%;
+   height: 30px;
+   margin: 0px 5px;
+}
+#payment_partners p{
+    font-size: 15px;
+    color:gray;
+}
+#payment h3{
+    color: #464849;
+}

@@ -1,0 +1,82 @@
+function footer(){
+    return `<div>
+    <h2>Company</h2>
+    <h3>About Us</h3>
+    <h3>Careers</h3>
+    <h3>Blog</h3>
+    <h3>Partner with PharmEasy</h3>
+    <h3>Sell at PharmEasy</h3>
+    
+    </div>
+    <div>
+        <h2>Featured Categories</h2>
+        <h3>Covid Essentials</h3>
+        <h3>Personal Care</h3>
+        <h3>Health Food and Drinks</h3>
+        <h3>Beauty</h3>
+        <h3>Skin Care</h3>
+        <h3>Home Care</h3>
+        <h3>Ayurvedic Care</h3>
+        <h3>Sexual Wellness</h3>
+        <h3>Fitness & Supplements</h3>
+        <h3>Mother and Baby Care</h3>
+        <h3>Healthcare Devices</h3>
+        <h3>Health Condition</h3>
+        <h3>Diabetic Care</h3>
+        <h3>Elderly Care</h3>
+        <h3>Accessories And Wearables</h3>
+        <h3>Value Store</h3>
+        <h3></h3>
+    </div>
+    <div>
+        <h2>Value Store</h2>
+        <h3>Browse All Medicines</h3>
+        <h3>Browse All Molecules</h3>
+        <h3>Browse All Cities & Areas</h3>
+        <h3>Browse All Stores</h3>
+        <h3>FAQs</h3>
+        <h2>Policy Info</h2>
+        <h3>Editorial Policy</h3>
+        <h3>Privacy Policy</h3>
+        <h3>Vulnerability Disclosure Policy</h3>
+        <h3>Terms and Conditions</h3>
+        <h3>Customer Support Policy</h3>
+        <h3>Return Policy</h3>
+    </div>
+    <div>
+        <h2>FOLLOW US</h2>
+        <div id="logo-1">
+         <img style="background-color:transparent ;" src="data:image/webp;base64,UklGRjQCAABXRUJQVlA4WAoAAAAQAAAAhwAAhwAAQUxQSL4BAAARDzD/ERGCbm1bWbVt8xIYUgKlUBqURimWYEjAYAXi1vt+P3FE/ydAkhb7qv3gOe9wN92Kt8tKt2mV27KqpIYfpP4iSueLQ7peJGm8yNKEqH2HIi2yngdVgsM4QQ2C0SA0qtxF6BRrEk+SdXF8cBGtTvpgEKxGHsg8k8jTGkWUWZ1ZtV4stMoqL2b1IMy68ovxo/YVu06UbpA2i7q5HhoQtNDTCRzeALJmNRZQNYrBXWd66pvY/jydm0N6ujbJGZvszE1xFlWL6kDSBV5UtxpIgvDUqZIW0cmShnOSJF0cziHpdC6ipE76wSBIamRHd2c+FKNu1k/KZv5iPVQjb8b/orKZxnwov6ib9RM2GOMhO0FScy6ipE76wckh6eRwkqTL6WRJg+hUSctpIAnCkyCqg6yky1tULaozuRdnbLJzbZJzbg6nb6KjjawFVG8A2TuBw2tA8LSoesibTtwM1u551H9GeTG/mPXFKl/wgjJe5UGwGvkiWp30wUmyLo4POsWaxEa1FqFBMBoEwWGcIC2yMajShPjQoUgDP0vXiySdLw6pv4hSexEkLatK0rTK7bLSrVvxJkvbYeSd1kOVJFZQOCBQAAAAcAcAnQEqiACIAD6RSKFNJaQjIiBoALASCWlu4XVAADuh1VJsmIdVSbJiHVUmyYh1VJsmIdVSbJiHVUmyYh1VJsmIMAAA/v94H/xAAAAAAAA=" alt="">
+         <img style="background-color:transparent ;" src="data:image/webp;base64,UklGRtQAAABXRUJQVlA4WAoAAAAQAAAAfwAAfwAAQUxQSGgAAAARDzD/ERHCcSRJcjIrCXjKBEzBNZm2pqwJPK+JKc7pWL04PhH9nwB7f4Ji2QaMKZdQqtSkk+RSSChLtyq1bsdup9X56kLyFyURgKUDDtJemj8YC2/f1HdFGj9u5ZWZBcyW/kvZ5RzGV1ZQOCBGAAAAcAYAnQEqgACAAD6RSKFNJaQjIiCIALASCWlu4XSQAE9tiLxBUc9sReIKjntiLxBUc9sReIKjntiLxBNgAP7/Uk9igAAAAA==" alt="">
+          <img style="background-color:transparent ;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Fa9hsJFTOUERGm182bu975KN1svwkFRuaA&usqp=CAU" alt="">
+          <img style="background-color:red;" src="data:image/png;base64,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" alt="">
+        </div>
+    </div>
+   
+</div>
+
+<div id="payment">
+    <h3>Our Payment Partners</h3>
+    <div id="payment_partners">
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg" alt="">
+        </div>
+        <div>
+            <p>© 2022 PharmEasy. All Rights Reserved</p>
+        </div>
+    </div>`
+}
+
+
+export {footer}

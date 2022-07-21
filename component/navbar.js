@@ -1,6 +1,6 @@
 let navbar=()=>{
         return `<div id="logo">
-        <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"></img>
+        <a href="index.html"><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"></img></a>
         </div>
         
         <div id="searchbox">
@@ -24,16 +24,16 @@ let navbar=()=>{
         </div>
         
         <div id="navlist">
-        <div><a>Order Medicines</a></div>
-        <div><a>Healthcare Products</a></div>
-        <div><a>Lab Tests</a></div>
-        <div><a>RTPCR</a></div>
+        <div><a href="ordermedicines.html">Order Medicines</a></div>
+        <div><a href="products.html">Healthcare Products</a></div>
+        <div><a href="test.html">Lab Tests</a></div>
+        <div><a href="RTPCR.html">RTPCR</a></div>
         </div>
         <div id="sidelist">
         <div><a><img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"> Offers</a>
         </div>
-        <div><a> <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg">Users</a></div>
-        <div><a> <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg">Cart</a></div>
+        <div><a href="login.html"> <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg">Login / Signup</a></div>
+        <div><a href="cart.html"> <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg">Cart</a></div>
         </div>`
         
         
@@ -41,4 +41,6 @@ let navbar=()=>{
 console.log(navbar())
 
 export default navbar
+
+
 

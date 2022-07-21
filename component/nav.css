@@ -2,6 +2,10 @@
         background-color: #10847E;
         height: 130px;
 }
+body{
+padding: 0%;
+margin: 0%;
+}
 
 #logo img {
         width: 172px;
@@ -77,6 +81,11 @@ svg {
         width: 280px;
         margin-top: -20px;
         color: white;
+}
+.hi {
+        width: 40%;
+        border:1px solid red;
+        margin-left: 320px;
 }
 
 /* padding left = 10px 

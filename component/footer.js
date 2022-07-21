@@ -1,5 +1,6 @@
 function footer(){
-    return `<div>
+    return `<div id="container">
+    <div>
     <h2>Company</h2>
     <h3>About Us</h3>
     <h3>Careers</h3>
@@ -75,8 +76,9 @@ function footer(){
         <div>
             <p>© 2022 PharmEasy. All Rights Reserved</p>
         </div>
+    </div>
     </div>`
 }
 
 
-export {footer}
+export default footer

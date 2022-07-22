@@ -90,6 +90,25 @@
       border: none;
       border-radius: 5px;
     }
+    #add {
+      width: 130px;
+      height: 45px;
+      
+      color: white;
+      font-size: medium;
+      border: none;
+      border-radius: 5px;
+    }
+    #add>select {
+      width: 130px;
+      height: 45px;
+      background-color: white;
+      color: black;
+      font-size: medium;
+      
+      border-radius: 5px;
+    }
+
 
     #des {
       width: 600px;
@@ -99,6 +118,13 @@
     #nav{
       margin-left: -8px;
     }
+
+
+
+
+
+
+
   </style>
 </head>
 
@@ -114,7 +140,7 @@
 
     <div id="product_show">
       <div id="image">
-        <img
+        <img id="images"
           src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-1-1647434835.jpg?dim=320x320&dpr=1&q=100"
           alt="">
       </div>
@@ -129,7 +155,7 @@
           <h3>*</h3>
         </div>
         <p style="color: #959595;font-size: xx-small;margin-top: -10px;">Inclusive of all taxes</p>
-        <button id="addtocart">Add To Cart</button>
+        <div id="add"><button id="addtocart">Add To Cart</button></div>
       </div>
 
     </div>
@@ -247,7 +273,8 @@
 
       div.setAttribute("class", "hi")
       div.addEventListener("click", function () {
-        abc(Index)
+        localStorage.setItem("showproduct", JSON.stringify(product))
+        window.location.href = "showproduct.html"
       })
 
       let name = document.createElement("h3")
@@ -257,13 +284,67 @@
       document.getElementById("cont2").append(div)
     }
   }
-  function abc(Index) {
-    console.log("ghghg")
-    let parray = JSON.parse(localStorage.getItem("localproduct")) || []
-    parray.push(Index)
-    localStorage.setItem("localproduct", JSON.stringify(parray))
-    window.location.href = "showproduct.html"
+  let showproduct = JSON.parse(localStorage.getItem("showproduct")) || {}
+
+
+  function doIt(el){
+    document.querySelector("#images").src = el.imageUrl
+    document.querySelector("#pro_price").innerText = el.price
+    document.querySelector("#title").innerText = el.name
+    document.querySelector("#description").innerText = el.description
+
+
   }
+
+  doIt(showproduct)
+
+  document.querySelector("#addtocart").addEventListener("click", dododo);
+
+
+  function dododo(){
+   let select = document.createElement("select")
+   select.innerHTML = `<option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>`
+
+      select.addEventListener("change", ()=>{
+        gotocart(select.value)
+      })
+
+   document.querySelector("#add").innerHTML = ""
+/*    document.querySelector("#add").innerHTML = select
+ */   document.querySelector("#add").append(select)
+
+ console.log("hello",)
+
+
+  }
+
+  let cartproduct = JSON.parse(localStorage.getItem("cartproduct")) || []
+
+
+  function gotocart(value){
+    document.querySelector("#view_cart").style.backgroundColor = "#10847e"
+
+    let cartpro = showproduct
+    cartpro.size = value
+    cartproduct.push(cartpro)
+    localStorage.setItem("cartproduct", JSON.stringify(cartproduct))
+    console.log("kyahai", value)
+    document.querySelector("#view_cart").addEventListener("click", ()=>{
+      window.location.href = "cart.html"
+    })
+
+  }
+
+ 
+  
 
 
 

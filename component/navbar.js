@@ -38,7 +38,7 @@ let navbar=()=>{
         
         
 }
-console.log(navbar())
+
 
 export default navbar
 

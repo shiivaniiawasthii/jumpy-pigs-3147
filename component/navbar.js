@@ -10,12 +10,12 @@ let navbar=()=>{
                         <a color="grey" class="btn btn-secondary dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Select Pincode
-                        </a>
+                         </a>
         
         
                 </div>
         </div>
-        <input placeholder="Search medicines/Healthcare products" id="search">
+       <input placeholder="Search medicines/Healthcare products" id="search">
         <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-search" viewBox="0 0 16 16">
                         <path

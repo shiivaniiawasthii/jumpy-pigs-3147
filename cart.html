@@ -1,200 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="./component/nav.css">
-    <link rel="stylesheet" href="./component/footer.css">
-    <style>
-        *{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            
-        }
-      #main {
-        margin: auto;
-        width: 65%;
-        margin-top: 180px;
-        /* height: 700px; */
-        display: flex;
-        justify-content: space-between;
-      }
-      #cart_product_show {
-        width: 60%;
-        height: 100%;
-      }
-      #cart_structure {
-        width: 30%;
-        height: 100%;
-      }
-      #naming {
-        display: flex;
-        justify-content: space-between;
-      }
-      #naming > h1 {
-        margin-top: -0px;
-      }
-      #show_product{
-        height: 100px;
-        border: 1px solid green;
-        margin-bottom: 60px;
-      }
-      /* cart structure part */
 
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart page</title>
 
-      #offers{
-        width: 100%;
-        height: 50px;
-        border: 2px solid #10847e;
-        border-radius: 5px;
-      }
 
-      #add_address{
-        width: 100%;
-        height: 50px;
-        background-color: #10847e;
-        border-radius: 5px;
-        border: none;
-        margin-top: 20px;
-        color: white;
-        font-size: 20px;
+  <link rel="stylesheet" href="./component/nav.css">
+  <link rel="stylesheet" href="./component/footer.css">
+  <style>
+    * {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-      }
-      #dicount_pic{
-        width: 100%;
-        height: 60px;
-        margin-top: 20px;
-      }
-      #price>div{
-        display: flex;
-        justify-content: space-between;
-        margin-top: -15px;
-       
-      }
-      /* #price>div>h4{
+    }
+
+    #main {
+      margin: auto;
+      width: 65%;
+      margin-top: 180px;
+      /* height: 700px; */
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #cart_product_show {
+      width: 60%;
+      height: 100%;
+    }
+
+    #cart_structure {
+      width: 30%;
+      height: 100%;
+    }
+
+    #naming {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #naming>h1 {
+      margin-top: -0px;
+    }
+
+    #show_product {
+      height: 100px;
+      border: 1px solid green;
+      margin-bottom: 60px;
+    }
+
+    /* cart structure part */
+
+
+
+    #offers {
+      width: 100%;
+      height: 50px;
+      border: 2px solid #10847e;
+      border-radius: 5px;
+
+    }
+
+    #add_address {
+      width: 100%;
+      height: 50px;
+      background-color: #10847e;
+      border-radius: 5px;
+      border: none;
+      margin-top: 20px;
+      color: white;
+      font-size: 20px;
+
+    }
+
+    #dicount_pic {
+      width: 100%;
+      height: 60px;
+      margin-top: 20px;
+    }
+
+    #price>div {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -15px;
+
+    }
+
+    /* #price>div>h4{
         margin-top: 10px;
       } */
 
-      #offer_dis{
-        width: 100%;
-        margin-top: 10px;
-      }
-      #senetize{
-        width: 100%;
-        margin-top: 10px;
-      }
-      #notes{
-        width: 99%;
-        height: 70px;
-        margin-top: 15px;
-        
-      }
-      #list1{
-        line-height: 26px;
-        color: #67655e;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      }
+    #offer_dis {
+      width: 100%;
+      margin-top: 10px;
 
-      #cart_foot{
-        width: 100%;
-        
-      }
-      
-    </style>
-  </head>
-  <body>
+    }
 
-    <nav id="nav">
+    #senetize {
+      width: 100%;
+      margin-top: 10px;
+    }
 
-    </nav>
-    <br>
-    <br>
+    #notes {
+      width: 99%;
+      height: 70px;
+      margin-top: 15px;
 
-    <div id="main">
-      <div id="cart_product_show">
+    }
 
-        <div id="naming">
-          <h1>3 Items In Cart</h1>
-          <p>Prices are indicative</p>
-        </div>
+    #list1 {
+      line-height: 26px;
+      color: #67655e;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 
-        <!-- show product -->
-        <div id="show_product">
+    #cart_foot {
+      width: 100%;
 
-        </div>
-        
+    }
+  </style>
+</head>
 
-        <!-- rest things -->
-        <h2>Additional Notes</h2>
-        <input type="text" placeholder="Add your additional note regarding your order" name="" id="notes">
+<body>
 
-        <ul id="list1">
-            <li>A licensed pharmacy would be delivering your order basis availability of product & fastest delivery.  Details</li>
-            <li>Prices are indicative and may change after billing</li>
-            <li>PharmEasy is a technology platform to connect sellers and buyers and is not involved in sales of any product. Offer for sale on the products and services are provided/sold by the sellers only. For detail read  Terms and Conditions</li>
+  <nav id="nav">
 
-        </ul>
+  </nav>
+  <br>
+  <br>
+
+  <div id="main">
+    <div id="cart_product_show">
+
+      <div id="naming">
+        <h1>3 Items In Cart</h1>
+        <p>Prices are indicative</p>
+      </div>
+
+      <!-- show product -->
+      <div id="show_product">
 
       </div>
 
-      <div id="cart_structure">
-            <select name="" id="offers">
-                <option >Apply Coupon / View Offers</option>
-                <option value="masai">MASAI 30%</option>
-                <option value="festival">Festival 20%</option>
-            </select>
-            
 
-            <button id="add_address">Add delivery address</button>
-            <img src="./img/discount.png" id="dicount_pic" alt="">
+      <!-- rest things -->
+      <h2>Additional Notes</h2>
+      <input type="text" placeholder="Add your additional note regarding your order" name="" id="notes">
 
-            <h3>Order Summary</h3>
+      <ul id="list1">
+        <li>A licensed pharmacy would be delivering your order basis availability of product & fastest delivery. Details
+        </li>
+        <li>Prices are indicative and may change after billing</li>
+        <li>PharmEasy is a technology platform to connect sellers and buyers and is not involved in sales of any
+          product. Offer for sale on the products and services are provided/sold by the sellers only. For detail read
+          Terms and Conditions</li>
 
-            <div id="price">
-                <div>
-                    <p>cart value</p>
-                    <p>199.50</p>
-                </div>
-                <div>
-                    <p>Delivery charge</p>
-                    <p>99.50</p>
-                </div>
-                <div>
-                    <p>Total charge</p>
-                    <p>299.00</p>
-                </div>
-            </div>
+      </ul>
 
-            <img src="./img/offer_dis.png" id="offer_dis" alt="">
-            <img src="./img/senetize.png" id="senetize" alt="">
-      </div>
     </div>
 
-    <img src="./img/cart_foot.png" id="cart_foot" alt="">
+    <div id="cart_structure">
+      <select name="" id="offers">
+        <option class="off1">Apply Coupon / View Offers</option>
+        <option class="off2" value="masai30%">MASAI 30%</option>
+        <option class="off3" value="festival20%">Festival 20%</option>
+      </select>
 
-    <div id="con"></div>
-  </body>
+
+      <button id="add_address">Add delivery address</button>
+      <img src="./img/discount.png" id="dicount_pic" alt="">
+
+      <h3>Order Summary</h3>
+
+      <div id="price">
+        <div>
+          <p>cart value</p>
+          <p>199.50</p>
+        </div>
+        <div>
+          <p>Delivery charge</p>
+          <p>99.50</p>
+        </div>
+        <div>
+          <p>Total charge</p>
+          <p class="totalamount">699.00</p>
+        </div>
+      </div>
+
+      <img src="./img/offer_dis.png" id="offer_dis" alt="">
+      <img src="./img/senetize.png" id="senetize" alt="">
+    </div>
+  </div>
+
+  <img src="./img/cart_foot.png" id="cart_foot" alt="">
+
+  <div id="con"></div>
+</body>
+
 </html>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<script type="module">
-        import navbar from "./component/navbar.js"
-        import footer from "./component/footer.js"
-        document.querySelector("#nav").innerHTML = navbar()
-        document.querySelector("#con").innerHTML = footer()
 
+<script type="module">
+  import navbar from "./component/navbar.js"
+  import footer from "./component/footer.js"
+  document.querySelector("#nav").innerHTML = navbar()
+  document.querySelector("#con").innerHTML = footer()
+
+
+
+</script>
+<script>
+  let offers1 = document.querySelector(".off2")
+  let offers2 = document.querySelector(".off3")
+  // console.log(offers1, offers2)
+  offers1.addEventListener("click", poffers1)
+  offers2.addEventListener("click", poffers2)
+  function poffers1() {
+    let totalamnt2 = document.querySelector(".totalamount")
+    let totalamnt = document.querySelector(".totalamount").innerHTML
+    console.log(totalamnt)
+    if (totalamnt > 500) {
+      alert("you can sucessfully apply code")
+      final = totalamnt - (totalamnt * .03)
+      totalamnt2.innerHTML = final
+      console.log(final)
+
+    }
+    else {
+      alert("sorry,your added amount is low to add our code")
+    }
+
+  }
+  function poffers2() {
+    let totalamnt2 = document.querySelector(".totalamount")
+    let totalamnt = document.querySelector(".totalamount").innerHTML
+    console.log(totalamnt)
+    if (totalamnt > 400) {
+      alert("you can sucessfully apply code")
+      final = totalamnt - (totalamnt * .02)
+      totalamnt2.innerHTML = final
+      console.log(final)
+
+    }
+    else {
+      alert("sorry,your added amount is low to add our code")
+    }
+
+  }
 
 </script>

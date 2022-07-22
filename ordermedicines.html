@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #main {
+      width: 80%;
+      /* height: 400px;
+        border: 1px solid blue;  */
+      margin: auto;
+      display: flex;
+    }
+
+    #search_box {
+      width: 60%;
+      height: 200px;
+      /* border: 1px solid red; */
+      margin: auto;
+      background-color: #10847E;
+      color: white;
+      border-radius: 5px;
+    }
+
+    #two_box {
+      width: 40%;
+      height: 200px;
+      /* border: 1px solid red; */
+      margin: auto;
+    }
+
+    #twins1 {
+      width: 70%;
+      height: 50px;
+      border: 2px solid black;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 5px;
+      border-color: grey;
+    }
+
+    #twins2 {
+      width: 70%;
+      height: 50px;
+      border: 2px solid black;
+      margin: auto;
+      margin-top: 10px;
+      border-radius: 5px;
+      border-color: grey;
+    }
+
+    #two_box h3 {
+      color: gray;
+      margin-left: 10px;
+    }
+
+    .highlight {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .highlight>div {
+      display: flex;
+
+    }
+
+    .pin_code {
+      display: flex;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    #image {
+      /* display: block; */
+      width: 30px;
+      height: 35pxpx;
+      margin-top: 16px;
+     border-color: transparent;
+     border-radius: 5px;
+    }
+
+    .pin_code input {
+      width: 50%;
+      height: 35px;
+      border-radius: 5px;
+      font-size: larger;
+      margin-top: 14px;
+      border-color: 1px;
+    }
+
+    #select {
+      width: 30%;
+      height: 40px;
+      font-size: larger;
+      border-radius: 5px;
+      margin-top: 14px;
+      /* border-color: transparent; */
+    }
+
+    #main_img img {
+      width: 100%;
+      height: 300px;
+      margin-top: 50px;
+    }
+
+    #reviews {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #reviews>div {
+      width: 23%;
+      margin-bottom: 50px;
+    }
+
+    #reviews>div div {
+      height: 300px;
+      background-color: #F2FFF8;
+      padding: 0px 10px;
+      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    }
+
+    .detail b {
+      color: rgb(101, 100, 100);
+      font-weight: bolder;
+    }
+
+    .detail p {
+      color: gray;
+    }
+
+    h3 {
+      color: rgb(101, 100, 100);
+    }
+
+    #OJFY {
+      display: flex;
+      align-items: center;
+    }
+
+    #offer {
+      font-family: Open Sans, sans-serif !important;
+      color: gray;
+      margin-left: 20px;
+    }
+
+    #offersJustForYou {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 150px;
+      margin-top: 50px;
+      /* border: 1px solid black; */
+    }
+
+    #OJFY {
+      height: 50px;
+      /* border: 1px solid black; */
+    }
+
+    #CARDS {
+      display: flex;
+      height: 80px;
+      /* border: 1px solid black;  */
+      overflow-x: auto;
+      width: 100%;
+    }
+
+    #CARDS::-webkit-scrollbar {
+      width: 0;
+      height: 0px;
+    }
+
+    .card {
+      height: 76px;
+      width: 200px;
+
+      border-radius: 5px;
+      margin-left: 50px;
+      /* border: 1px solid black; */
+    }
+
+    .thisforimgtext {
+      height: 76px;
+      border: 2px solid rgb(193, 187, 187);
+      width: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .forimge {
+      height: 50%;
+    }
+
+    .forpera {
+      margin: 10px;
+    }
+
+    .forcode {
+      display: flex;
+      margin: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .forp {
+      margin: 0;
+      color: #4f585e;
+      font-family: Open Sans, sans-serif !important;
+      font-size: 14px;
+    }
+
+    .code {
+      margin: 0;
+      color: rgb(108, 105, 105);
+      font-weight: 600;
+      font-family: Open Sans, sans-serif !important;
+    }
+
+    .med {
+      margin: 0;
+      color: rgb(92, 90, 90);
+      font-size: 14px;
+      font-family: Open Sans, sans-serif !important;
+      font-weight: 600;
+    }
+
+    /* h2{
+  color: rgb(101, 100, 100);
+} */
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Order Medicines Online</h1>
+    <div id="main">
+      <div id="search_box">
+        <div class="highlight">
+          <div>
+
+            <img src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropDisc.svg" alt="">
+            <p>Flat 15% Off</p>
+          </div>
+          <div>
+            <img src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropProd.svg" alt="">
+            <p>1 Lakh+ Products</p>
+          </div>
+          <div>
+            <img src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropReturn.svg" alt="">
+            <p>Easy Returns</p>
+          </div>
+        </div>
+        <h2>Search for Medicines / Healthcare Products</h2>
+        <div class="pin_code">
+          <select id="select">
+            <option value="85000 Patna">Patna</option>
+            <option value="851201 beitiya">betiya</option>
+          </select>
+          <input type="text" placeholder="Search for Medicines/Healthcare products">
+          <img id="image"
+            src="data:image/png;base64,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"
+            alt="">
+        </div>
+      </div>
+      <div id="two_box">
+        <div id="twins1">
+          <h3>Order via prescription >></h3>
+        </div>
+        <div id="twins2">
+          <h3>Don't have prescription >></h3>
+        </div>
+      </div>
+    </div>
+    <div id="offersJustForYou">
+      <div id="OJFY">
+        <img style="height:40px; margin-left: 20px;" src="https://assets.pharmeasy.in/web-assets/dist/67890676.svg"
+          alt="">
+        <h2 id="offer">Offers Just For You</h2>
+      </div>
+      <div id="CARDS">
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext" style="margin-left:0px;">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/cf12046529f-25.jpg?dim=60x0&dpr=1.5&q=100" alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off </p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">GIFT 25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/81308cc59b5-FLAT_20.jpg?dim=60x0&dpr=1&q=100" alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code" style="font-size:15px;">CODE -MEGA 20</p>
+                <p class="med"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/2846076d5d2-Diagnostics-10-min.png?dim=60x0&dpr=1&q=100"
+                alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/6b979e67782-Diagnostics-02-min.png?dim=60x0&dpr=1&q=100"
+                alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/40ef59a3196-Diagnostics-11-min.png?dim=60x0&dpr=1&q=100"
+                alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/6b979e67782-Diagnostics-02-min.png?dim=60x0&dpr=1&q=100"
+                alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/d3036f79b0d-Diagnostics_offers-03.png?dim=60x0&dpr=1.5&q=100"
+                alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/8cdf65ac110-mobiwiklogo.png?dim=60x0&dpr=1.5&q=100" alt="">
+            </div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/cf12046529f-25.jpg?dim=60x0&dpr=1.5&q=100" alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/8500c9729db-logo_PhonePe_PhonePe.png?dim=60x0&dpr=1.5&q=100"
+                alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="width:200px;"></div>
+          <div class="thisforimgtext">
+            <div><img style="height:50px; margin: 5px;"
+                src="https://cms-contents.pharmeasy.in/offer/b02990d71ff-1card.jpg?dim=60x0&dpr=1.5&q=100" alt=""></div>
+            <div class="forpera">
+              <p class="forp">Flat 25% off + up to Rs. 1000 cashback</p>
+              <div class="forcode">
+                <p class="code">Code:</p>
+                <p class="med">MEDS25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main_img">
+      <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_50lac.jpg" alt="">
+    </div>
+    <h2>What our customers have to say</h2>
+    <div id="reviews">
+      <div>
+        <h3>Lipi Chaudhuri</h3>
+        <h3>April 15, 2020</h3>
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg" alt="">
+          <p>This app is game changer for me. I am unable to go out alwaays to buy medicinal products. Pharmeasy gives
+            me the last liberrty to shope essentials healthcare products from home. Yhe app is very user friendly and me
+            beign an elderluy person do not find any difficulty in using it. They deliver well in time. Thanks </p>
+        </div>
+      </div>
+      <div>
+        <h3>Tirthankar Das</h3>
+        <h3>April 23, 2020</h3>
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg" alt="">
+          <p>Very good app. Would recommend it everyone requiring fast and efficient deliver of medicinal products at
+            the doorstep.</p>
+        </div>
+      </div>
+      <div>
+        <h3>Debanjan Roy</h3>
+        <h3>April 18, 2020</h3>
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg" alt="">
+          <p>Excellent experience. Pharmeasy has not let's down during lockdown. Thanks team. Great job. The application
+            is also very smooth. And does its job well with an attractive UI and easy to use features. Good job
+            developer.</p>
+        </div>
+      </div>
+      <div>
+        <h3>Rohini Sarkar</h3>
+        <h3>April 21, 2020</h3>
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg" alt="">
+          <p>Very helpful and friendly app in terms of usability. Customer support & money saving from the point of
+            medical necessity of every person.</p>
+        </div>
+      </div>
+    </div>
+    <h3>India's No. 1 Medicine Delivery App</h3>
+    <div class="detail">
+      <p>The concept of <b>medicine home delivery</b> has been taken to a new level by the PharmEasy <b>online medicine
+          delivery</b> app. You can use the PharmEasy <b>online medicine delivery</b> app to browse through an extensive
+        range of medicines. Each medicine undergoes a 3-step quality check.
+
+        Whatever be your medicine requirement, you are sure to locate it in this online pharmacy. All you have to do
+        then is to add it to your cart and place the order and get your order delivered quickly. India’s beloved
+        <b>online medicine delivery </b> app makes sure that you get your medicines in record time because we know how
+        vital time is in any treatment. Sit back, and we will have all your medical necessities delivered to your
+        doorstep.</p>
+      <h3>Online Medicine - Your Online Medical Store in India</h3>
+      <p>Tired of walking all the way to your local medicine store? Worried that going out is risky during the current
+        times? <b>Order</b> medicines <b>online</b> at PharmEasy, India’s trusted online medicine app. With more than 1
+        lakh medicines always in stock, you are sure to find what you are looking for, and that too at affordable
+        prices!
+
+        Besides, extremely stringent sanitization norms are followed at your favourite online medical store. PharmEasy
+        takes the safety of customers and employees very seriously.</p>
+      <h3>Reasons To Buy Medicine Online From PharmEasy</h3>
+      <p>Here are a few reasons that will convince you to give online medicine order through the PharmEasy app -</p>
+      <p>* 1,200+ cities and 20,000+ Pin codes served</p>
+      <p>* Express Delivery</p>
+      <p>* 1 Lakh+ medicines available</p>
+      <p>* Cash on delivery option available</p>
+      <p>* Attractive offers</p>
+      <p>* Cashback option through wallet</p>
+      <p>* Stringent quality checks</p>
+      <p>* Garnered the trust of more than 10 million users who have made an <b>online purchase</b> through PharmEasy
+      </p>
+      <h3>Get 3-Step Quality-checked Medicines</h3>
+      <p>PharmEasy is a one-stop-shop for all your healthcare needs. We have 1L+ products for you to choose from. Buy
+        medicines online at affordable prices from the comforts of your home in just a few clicks and get them delivered
+        at your doorstep.
+        The entire process of shopping for medicines is hassle-free and convenient. All you have to do is search for the
+        products you need on our website or app, add to cart and then proceed with the checkout process.
+        With our scheduled refill reminder, you don’t even need to keep track of your refill dates.
+        What’s more, we have great offers, with added discounts and massive e-wallet cashbacks on purchasing medicines!
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

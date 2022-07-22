@@ -14,12 +14,12 @@
                 #slideimages {
                         /* border:2px solid black; */
                         height: 300px;
-                        margin-top: 10px;
-                        position: relative;
-                        top: 150px;
-                        overflow-y: hidden;
+                        margin-top: 140px;
+                        margin-bottom: -150px;
+                       
 
                 }
+                
 
                 #con1 {
                         display: grid;
@@ -656,6 +656,8 @@
                 }
 
                 /* akash-end */
+
+               
         </style>
 </head>
 
@@ -663,6 +665,7 @@
         <nav id="nav">
 
         </nav>
+       
         <div id="cont2"></div>
 
         <!-- akash-html-start -->
@@ -952,7 +955,7 @@
                 <div class="featurebrands2"></div>
         </div>
         <!-- this is  Frequentaly Booked -->
-        <div id="Frequentlay" style="height: 330px; position: relative">
+        <div id="Frequentlay" style="height: 330px; position: relative;">
                 <div id="bluepart">
                         <div class="f1">
                                 <h2 class="f2">
@@ -1570,117 +1573,397 @@
 
 <script type="module">
         let products = [
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/196280/d-500mg-cal-tab-2-1641530784.jpg?dim=320x320&dpr=1&q=100",
-                        name: "D 500mg Cal Tablets",
-                        description: "D500cal Tablet contains a combination of calcium and vitamin D3 (also known as cholecalciferol/colecalciferol). It is used to treat vitamin D and calcium deficiency. It is used for conditions such as osteoporosis and helps in maintaining healthy bones and teeth",
-                        price: 60,
-                        id: 13,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/I09520/36-d-60k-strip-of-4-capsules-1-1641536375.jpg?dim=320x320&dpr=1&q=100",
-                        name: "36 D 60k Strip Of 4 Capsules",
-                        description: "36 D Capsule is a vitamin supplement. It contains Vitamin D3 as an active ingredient which is also known as cholecalciferol or colecalciferol. Vitamin D is an essential component for the absorption of calcium. It helps maintain healthy and strong bones and teeth.",
-                        price: 193,
-                        id: 14,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/244920/dee3-60k-orange-flavour-strip-of-6-chewable-tablets-2-1641533184.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Dee3 60k Orange Flavour Strip Of 6 Chewable Tablets",
-                        description: "Dee3 Chewable Tablet is a vitamin supplement. It contains Vitamin D3 as an active ingredient which is also known as cholecalciferol or colecalciferol. Vitamin D is an essential component for the absorption of calcium. It helps maintain healthy and strong bones and teeth.",
-                        price: 85,
-                        id: 15,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/220499/es-bio-cap-1-1641531442.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Es Bio Capsules",
-                        description: "In order to purchase drugs and pharmaceutical products that require a valid prescription, You are required to upload a scanned copy of the valid prescription on the Website",
-                        price: 170,
-                        id: 16,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/064935/el-5mg-tablet-2-1641535992.jpg?dim=320x320&dpr=1&q=100",
-                        name: "El 5mg Tablet",
-                        description: "El Tablet is a medicine used for the treatment of high blood pressure. It contains Enalapril as an active ingredient. El works by relaxing the blood vessels thus making the blood flow easy and makes your heart pump effectively",
-                        price: 24,
-                        id: 17,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/274477/evox-cap-2-1641531866.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Evox Capsules",
-                        description: "The information provided herein is supplied to the best of our abilities to make it accurate and reliable as it is published after a review by a team of professionals. This information is solely intended to provide a general overview on the product and must be used for informational purposes only. You should not use the information provided herein to diagnose, prevent, or cure a health problem",
-                        price: 93,
-                        id: 18,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/078670/fml-eye-drops-5ml-1-1641535277.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Fml Eye Drops 5ml",
-                        description: "FML eye drops are used to treat inflammation (redness, swelling, soreness) in the eyes. It contains fluorometholone, which belongs to a class of medicines called steroids. Before using FML eye drops, discuss it with your doctor if you have any other eye conditions",
-                        price: 129,
-                        id: 19,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/I06732/fol-5mg-strip-of-30-tablets-2-1653982455.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Fol 5mg Strip Of 30 Tablets",
-                        description: "Fol 5mg Strip Of 30 Tablets contains vitamin B9, also known as folic acid.",
-                        price: 40,
-                        id: 20,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/271736/fm-40mg-tablet-2-1641531216.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Fm 40mg Tablet",
-                        description: "Fm Tablet contains famotidine an antacid medicine. It works by blocking the secretion of excess gastric acid thereby reducing the amount of acid in the stomach.",
-                        price: 9,
-                        id: 21,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/227422/fzhh-150mg-tablet-1-1641532151.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Fzhh 150mg Tablet",
-                        description: "Fzhh 150mg Tab contains Fluconazole, which is an antifungal.",
-                        price: 15,
-                        id: 22,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/193333/zocon-dt-100mg-tablet-1-1641531453.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Zocon Dt 100mg Tablet",
-                        description: "Ecosprin 75 tablet is an antiplatelet medicine (blood thinner). It contains aspirin as its active ingredient. Ecosprin 75 is used to prevent the formation of blood clots.",
-                        price: 193,
-                        id: 23,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/L39612/fbt-40mg-strip-of-10-tablets-1-1641302416.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Fbt 40mg Strip Of 10 Tablets",
-                        description: "Fbt Tablet is a medicine used for the treatment of elevated uric acid levels in blood in conditions such as gouty arthritis. Gouty arthritis is a common type of arthritis that is very painful with deposition of uric acid in joints causing sudden attacks of redness, swelling, pain and heat.",
-                        price: 72,
-                        id: 24,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/227758/fbx-40mg-tablet-2-1641530377.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Fbx 40mg Tablet",
-                        price: 97,
-                        id: 25,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/A16240/zu-c-500mg-orange-flavour-strip-of-15-chewable-tablets-1-1641886692.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Zu C 500mg Orange Flavour Strip Of 15 Chewable Tablets",
-                        description: "Ecosprin 75 tablet is an antiplatelet medicine (blood thinner). It contains aspirin as its active ingredient. Ecosprin 75 is used to prevent the formation of blood clots.",
-                        price: 68,
-                        id: 26,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-1-1647434835.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Zac D Strip Of 15 Chewable Tablets",
-                        description: "Zac D tablet is a vitamin supplement. It contains a combination of vitamin C, vitamin D, vitamin A and zinc as active ingredients. Zac D tablet helps you meet your daily nutritional requirement of vitamin A, C, D and zinc. It is used to prevent or treat vitamin deficiency.",
-                        price: 123,
-                        id: 27,
-                },
-                {
-                        imageUrl: "https://cdn01.pharmeasy.in/dam/products/189680/zocon-200mg-tablet-2-1641531451.jpg?dim=320x320&dpr=1&q=100",
-                        name: "Zocon 200mg Tablet",
-                        description: "Zocon 200 tablet is an antifungal medicine used for the treatment of various fungal infections. It contains fluconazole as its main ingredient. Zocon 200 tablet prevents the growth of fungi by interfering with the chemicals essential for cell membrane formation in the fungi",
-                        price: 40,
-                        id: 28,
-                },
+        {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-1-1647434835.jpg?dim=320x320&dpr=1&q=100",
+                name: "Ecosprin 75mg Strip Of 14 Tablets",
+                description: "Ecosprin 75 tablet is an antiplatelet medicine (blood thinner). It contains aspirin as its active ingredient. Ecosprin 75 is used to prevent the formation of blood clots.",
+                price: 193,
+		    id: 1,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/I39868/a-to-z-ns-mango-flavour-syrup-200ml-1-1641538213.jpg?dim=320x320&dpr=1&q=100",
+                name: "A To Z Ns Mango Flavour Syrup 200ml",
+                description: "A to Z NS syrup contains a combination of multivitamins, multiminerals and astaxanthin. It is used to restore the decreased level of vitamins and minerals.",
+                price: 149,
+		    id: 2,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/254232/ab-flo-sr-200mg-tablet-2-1641532989.jpg?dim=320x320&dpr=1&q=100",
+                name: "Ab Flo Sr 200mg Tablet",
+                description: "AB-Flo SR tablet contains acebrophylline. It is used for breathing difficulty associated with lung-related disorders like asthma and chronic obstructive",
+                price: 202,
+	          id: 3,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/I03909/b-tab-tab-10s-2-1641537199.jpg?dim=320x320&dpr=1&q=100",
+                name: "B Tab Tab 10'S",
+                description: "Vitamin D3 / Cholecalciferol(1000.0 Iu),Vitamin B12 / Mecobalamin / Cynocobalamin /a",
+                price: 92,
+		    id: 4,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products_otc/E15930/baidyanath-arjunarishta-450-ml-2-1654257410.jpg?dim=320x320&dpr=1&q=100",
+                name: "Baidyanath Arjunarishta - 450 Ml",
+                description: "Baidyanath Arjunarishta is an Ayurvedic formulation made out of herbs used traditionally for thousands of years in Ayurveda to ensure normal functioning of the heart. Bioactive substances present in the mixture ",
+                price: 121,
+		    id: 5,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/029090/bro-zedex-syp-2-1641535537.jpg?dim=320x320&dpr=1&q=100",
+                name: "Bro Zedex Bottle Of 100ml Expectorant",
+                description: "Bro-Zedex syrup is used for the management of wet cough due to infection of the airways, lungs, and throat such as bronchitis. The wet cough is usually",
+                price: 121,
+		    id: 6,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/C75179/ccm-tablet-40s-2-1641538793.jpg?dim=320x320&dpr=1&q=100",
+                name: "Ccm Tablet 40'S",
+                description: "Check more medicines with composition as Vitamin D3 / Cholecalciferol(100.0 Iu) + Vitamin B9 / Folic Acid / Folate(50.0 Mcg) + Calcium",
+                price: 405,
+		    id: 7,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/240436/cal-360mg-strip-of-10-tablets-7-1641530610.jpg?dim=320x320&dpr=1&q=100",
+                name: "Cal 360mg Strip Of 10 Tablets",
+                description: "Cal 360 Tablet contains a combination of calcium and vitamin D3 (also known as cholecalciferol/colecalciferol). It is used to treat vitamin D and calcium",
+                price: 245,
+		    id: 8,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/240974/criz-m-tablet-2-1641531051.jpg?dim=320x320&dpr=1&q=100",
+                name: "Criz M Tablet",
+                description: "Check more medicines with composition as Montelukast(10.0 Mg) + Levocetirizine(5.0 Mg)",
+                price: 80,
+		    id: 9,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/241198/cranpac-d-strip-of-10-tablets-1-1654073819.jpg?dim=320x320&dpr=1&q=100",
+                name: "Cranpac D Strip Of 10 Tablets",
+                description: "Check more medicines with composition as D-Mannose(600.0 Mg) + Cranberry(300.0 Mg)",
+                price: 310,
+		    id: 10,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products_otc/Y16819/buddsbuddy-classic-baby-feeding-bottle-125ml-s-1pc-blue-1-1641789798.jpg?dim=320x320&dpr=1&q=100",
+                name: "Buddsbuddy Classic Baby",
+                description: "BuddsBuddy Classic Baby Feeding Bottle is a premium product loved and trusted by a lot of parents. Using this product gives a complete feeding experience to your kid. These bottles are",
+                price: 234,
+		    id: 11,
+            },
+		{
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/014476/ark-gel-2-1641299608.jpg?dim=320x320&dpr=1&q=100",
+                name: "Ark Gel",
+                description: "Check more medicines with composition as Methyl Salicylate(5.0 %) + Menthol(5.0 %) + Capsaicin(0.025 %) + Diclofenac(1.16 %)",
+                price: 75,
+		    id: 12,
+            },
+		 {
+            imageUrl: "https://cdn01.pharmeasy.in/dam/products/196280/d-500mg-cal-tab-2-1641530784.jpg?dim=320x320&dpr=1&q=100",
+            name: "D 500mg Cal Tablets",
+            description: "D500cal Tablet contains a combination of calcium and vitamin D3 (also known as cholecalciferol/colecalciferol). It is used to treat vitamin D and calcium deficiency. It is used for conditions such as osteoporosis and helps in maintaining healthy bones and teeth",
+            price: 60,
+                id: 13,
+        },
+        {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/I09520/36-d-60k-strip-of-4-capsules-1-1641536375.jpg?dim=320x320&dpr=1&q=100",
+                name: "36 D 60k Strip Of 4 Capsules",
+                description: "36 D Capsule is a vitamin supplement. It contains Vitamin D3 as an active ingredient which is also known as cholecalciferol or colecalciferol. Vitamin D is an essential component for the absorption of calcium. It helps maintain healthy and strong bones and teeth.",
+                price: 193,
+                    id: 14,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/244920/dee3-60k-orange-flavour-strip-of-6-chewable-tablets-2-1641533184.jpg?dim=320x320&dpr=1&q=100",
+                name: "Dee3 60k Orange Flavour Strip Of 6 Chewable Tablets",
+                description:"Dee3 Chewable Tablet is a vitamin supplement. It contains Vitamin D3 as an active ingredient which is also known as cholecalciferol or colecalciferol. Vitamin D is an essential component for the absorption of calcium. It helps maintain healthy and strong bones and teeth." ,
+                price: 85,
+                    id: 15,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/220499/es-bio-cap-1-1641531442.jpg?dim=320x320&dpr=1&q=100",
+                name: "Es Bio Capsules",
+                description: "In order to purchase drugs and pharmaceutical products that require a valid prescription, You are required to upload a scanned copy of the valid prescription on the Website",
+                price: 170,
+                    id: 16,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/064935/el-5mg-tablet-2-1641535992.jpg?dim=320x320&dpr=1&q=100",
+                name: "El 5mg Tablet",
+                description: "El Tablet is a medicine used for the treatment of high blood pressure. It contains Enalapril as an active ingredient. El works by relaxing the blood vessels thus making the blood flow easy and makes your heart pump effectively",
+                price: 24,
+                    id: 17,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/274477/evox-cap-2-1641531866.jpg?dim=320x320&dpr=1&q=100",
+                name: "Evox Capsules",
+                description: "The information provided herein is supplied to the best of our abilities to make it accurate and reliable as it is published after a review by a team of professionals. This information is solely intended to provide a general overview on the product and must be used for informational purposes only. You should not use the information provided herein to diagnose, prevent, or cure a health problem",
+                price: 93,
+                    id: 18,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/078670/fml-eye-drops-5ml-1-1641535277.jpg?dim=320x320&dpr=1&q=100",
+                name: "Fml Eye Drops 5ml",
+                description: "FML eye drops are used to treat inflammation (redness, swelling, soreness) in the eyes. It contains fluorometholone, which belongs to a class of medicines called steroids. Before using FML eye drops, discuss it with your doctor if you have any other eye conditions",
+                price: 129,
+                    id: 19,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/I06732/fol-5mg-strip-of-30-tablets-2-1653982455.jpg?dim=320x320&dpr=1&q=100",
+                name: "Fol 5mg Strip Of 30 Tablets",
+                description: "Fol 5mg Strip Of 30 Tablets contains vitamin B9, also known as folic acid.",
+                price: 40,
+                    id: 20,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/271736/fm-40mg-tablet-2-1641531216.jpg?dim=320x320&dpr=1&q=100",
+                name: "Fm 40mg Tablet",
+                description: "Fm Tablet contains famotidine an antacid medicine. It works by blocking the secretion of excess gastric acid thereby reducing the amount of acid in the stomach.",
+                price: 9,
+                    id: 21,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/227422/fzhh-150mg-tablet-1-1641532151.jpg?dim=320x320&dpr=1&q=100",
+                name: "Fzhh 150mg Tablet",
+                description: "Fzhh 150mg Tab contains Fluconazole, which is an antifungal.",
+                price: 15,
+                    id: 22,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/193333/zocon-dt-100mg-tablet-1-1641531453.jpg?dim=320x320&dpr=1&q=100",
+                name:"Zocon Dt 100mg Tablet",
+                description: "Ecosprin 75 tablet is an antiplatelet medicine (blood thinner). It contains aspirin as its active ingredient. Ecosprin 75 is used to prevent the formation of blood clots.",
+                price: 193,
+                    id: 23,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/L39612/fbt-40mg-strip-of-10-tablets-1-1641302416.jpg?dim=320x320&dpr=1&q=100",
+                name: "Fbt 40mg Strip Of 10 Tablets",
+                description: "Fbt Tablet is a medicine used for the treatment of elevated uric acid levels in blood in conditions such as gouty arthritis. Gouty arthritis is a common type of arthritis that is very painful with deposition of uric acid in joints causing sudden attacks of redness, swelling, pain and heat.",
+                price: 72,
+                    id: 24,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/227758/fbx-40mg-tablet-2-1641530377.jpg?dim=320x320&dpr=1&q=100",
+                name: "Fbx 40mg Tablet",
+                price: 97,
+                    id: 25,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/A16240/zu-c-500mg-orange-flavour-strip-of-15-chewable-tablets-1-1641886692.jpg?dim=320x320&dpr=1&q=100",
+                name: "Zu C 500mg Orange Flavour Strip Of 15 Chewable Tablets",
+                description: "Ecosprin 75 tablet is an antiplatelet medicine (blood thinner). It contains aspirin as its active ingredient. Ecosprin 75 is used to prevent the formation of blood clots.",
+                price: 68,
+                    id: 26,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-1-1647434835.jpg?dim=320x320&dpr=1&q=100",
+                name: "Zac D Strip Of 15 Chewable Tablets",
+                description: "Zac D tablet is a vitamin supplement. It contains a combination of vitamin C, vitamin D, vitamin A and zinc as active ingredients. Zac D tablet helps you meet your daily nutritional requirement of vitamin A, C, D and zinc. It is used to prevent or treat vitamin deficiency.",
+                price: 123,
+                    id: 27,
+            },
+            {
+                imageUrl: "https://cdn01.pharmeasy.in/dam/products/189680/zocon-200mg-tablet-2-1641531451.jpg?dim=320x320&dpr=1&q=100",
+                name: "Zocon 200mg Tablet",
+                description: "Zocon 200 tablet is an antifungal medicine used for the treatment of various fungal infections. It contains fluconazole as its main ingredient. Zocon 200 tablet prevents the growth of fungi by interfering with the chemicals essential for cell membrane formation in the fungi",
+                price: 40,
+                    id: 28,
+            },
+		{
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products_otc/I04914/horlicks-health-nutrition-drink-jar-1-kg-2-1655880696.jpg?dim=320x320&dpr=1&q=100",
+        name:"Horlicks Health & Nutrition Drink Jar, 1 Kg",
+        description:"Horlicks Classic Malt is a total balance nutrition supplement, that is formulated as a healthy drink for kids. This tasty drink powder comes loaded with 37 important nutrients like carbs, proteins, vitamins and minerals.",
+        price:499,
+        id:25,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products_otc/I48063/himalaya-protein-hair-cream-100ml-2-1641788418.jpg?dim=320x320&dpr=1&q=100",
+        name:"Himalaya Protein Hair Cream 100ml",
+        description:"Himalaya Protein Hair Cream nourishes the hair root and shaft. It is specially formulated to strengthen hair, promote hair growth and leave your hair soft and shiny.",
+        price:72,
+        id:26,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products/I01177/hcqs-200mg-strip-of-15-tablets-2-1641533369.jpg?dim=320x320&dpr=1&q=100",
+        name:"Hcqs 200mg Strip Of 15 Tablets",
+        description:"HCQS 200 tablets should be taken as instructed by your doctor. Consume it whole with a glass of water after a meal.",
+        price:93.94,
+        id:27,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products_otc/226634/i-can-pregnancy-test-kit-1-1654078700.jpg?dim=320x320&dpr=1&q=100",
+        name:"I Can Pregnancy Test Kit",
+        description:"he I Can pregnancy test kit is a very handy tool for women to know whether they are pregnant or not. Since being pregnant is wonderful and joyous news for most women, ",
+        price:35.2,
+        id:28,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products/281916/i-moist-soap-3-1641532645.jpg?dim=320x320&dpr=1&q=100",
+        name:"I Moist Soap",
+        description:"I Moist Tube Of 100 Ml Lotion,I Moist Baby Soap",
+        price:114.39,
+        id:29,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products/I01624/ismo-10mg-strip-of-30-tablets-2-1641530212.jpg?dim=320x320&dpr=1&q=100",
+        name:"Ismo 10mg Strip Of 30 Tablets",
+        description:"Ismo Tablet contains Isosorbide mononitrate as its active ingredient. Ismo Tablet belongs to a class of medicines called 'coronary vasodilators'.",
+        price:62.13,
+        id:30,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products_otc/I44429/johnsons-baby-milk-and-rice-cream-100g-2-1654250982.jpg?dim=320x320&dpr=1&q=100",
+        name:"Johnson'S Baby Milk And Rice Cream - 100g",
+        description:"Johnson's Baby is the most trusted brand worldwide for newborn and baby care. Johnson's Baby Milk and Rice Baby Cream is a cream enriched with extracts from natural ingredients such as rice and milk",
+        price:139.7,
+        id:31,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products_otc/097370/johnsons-baby-oil-500ml-2-1654258323.jpg?dim=320x320&dpr=1&q=100",
+        name:"Johnson'S Baby Oil - 500ml",
+        description:"A newborn's skin also loses hydration more than adults & is more inclined towards dryness. The ingredients of Johnson's Baby Oil is rich in Vitamin E which is specially put together for infants",
+        price:348.5,
+        id:32,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products/G53222/jalra-m-50-500mg-tablet-15s-1-1641538765.jpg?dim=320x320&dpr=1&q=100",
+        name:"Jalra M 50/500mg Tablet 15'S ",
+        description:"Jalra-M 50mg/500mg tablet is an anti-diabetic that contains vildagliptin and metformin as active ingredients. It is used to treat type 2 diabetes mellitus",
+        price:276.25,
+        id:33,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products/100991/kz-wrap-of-75gm-soap-1-1641530985.jpg?dim=320x320&dpr=1&q=100",
+        name:"Kz Wrap Of 75gm Soap",
+        description:"KZ soap is a medicated soap, used to treat fungal and yeast infections. Fungal infections are common because fungi surround us in the environment and they are part of the natural flora of the skin.",
+        price:152.15,
+        id:34,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products/I32698/k-gem-tab-15s-2-1641537165.jpg?dim=320x320&dpr=1&q=100",
+        name:"K Gem Tablets 15'S",
+        description:"K Gem tablet is a combination of metformin and gliclazide used to treat diabetes mellitus; the medication effectively reduces high blood sugar levels and is generally used in patients",
+        price:48.45,
+        id:35,
+    },
+    {
+        imageUrl:"https://cdn01.pharmeasy.in/dam/products/100990/kz-lotion-50ml-1-1654591958.jpg?dim=320x320&dpr=1&q=100",
+        name:"Kz Lotion 50ml",
+        description:"KZ lotion is a topical anti-fungal medicine used to treat fungal skin infections such as ringworm, fungal infections between the toes, inner thighs, private parts, etc.",
+        price:241.40,
+        id:36,
+    },
+	 {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products_otc/097360/johnsons-baby-oil-bottle-of-100-ml-2-1654252667.jpg?dim=320x320&dpr=1&q=100",
+    name: "Johnson'S Baby Oil Bottle Of 100 Ml",
+    description:
+      "Unlike adults, babies have very delicate, sensitive bodies and for the same reason, oils and lotions meant for adults will not do the job fairly on babies..",
+    price: 180,
+    id: 37,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products_otc/097330/johnsons-baby-lotion-100ml-2-1641398869.jpg?dim=320x320&dpr=1&q=100",
+    name: "Johnson'S Baby Lotion 100ml",
+    description:
+      "A to Z NS syrup contains a combination of multivitamins, multiminerals and astaxanthin. It is used to restore the decreased level of vitamins and minerals.",
+    price: 87,
+    id: 38,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/100991/kz-wrap-of-75gm-soap-1-1641530985.jpg?dim=320x320&dpr=1&q=100",
+    name: "Kz Wrap Of 75gm Soap",
+    description:
+      "KZ soap is a medicated soap, used to treat fungal and yeast infections. Fungal infections are common because fungi surround us in the environment and they are part of the natural flora of the skin",
+    price: 152,
+    id: 39,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/208524/keto-soap-100gm-1-1641533615.jpg?dim=320x320&dpr=1&q=100",
+    name: "Keto Soap 100gm",
+    description:
+      "keto soap is used to treat superficial fungal and yeast infections. Fungal infections are common because we are surrounded by fungi around us in the",
+    price: 193,
+    id: 40,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/I32698/k-gem-tab-15s-2-1641537165.jpg?dim=320x320&dpr=1&q=100",
+    name: "K Gem Tablets 15'S",
+    description:
+      "em tablet is a combination of metformin and gliclazide used to treat diabetes mellitus the medication effectively reduces high blood sugar levels",
+
+    price: 44,
+    id: 41,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/I14823/kz-plus-bottle-of-75ml-lotion-1-1653982025.jpg?dim=320x320&dpr=1&q=100",
+    name: "Kz Plus Bottle Of 75ml Lotion",
+
+    description:
+      "Bro-Zedex syrup is used for the management of wet cough due to infection of the airways, lungs, and throat such as bronchitis. The wet cough is usually",
+    price: 325,
+    id: 42,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/272891/kenz-2-box-of-75gm-soap-1-1654074517.jpg?dim=320x320&dpr=1&q=100",
+    name: "Kenz 2% Box Of 75gm Soap",
+
+    description:
+      "Kenz Soap is an antifungal medicated soap. It is used for the treatment of topical fungal infections. It contains ketoconazole as the active ingredient. It works by inhibiting the growth of the fungus..",
+
+    price: 405,
+    id: 43,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/326420/l-dio-1-5mg-tablet-2-1641534471.jpg?dim=320x320&dpr=1&q=100",
+    name: "L Dio 1 5mg Tablet",
+    description:
+      "L dio 1 tablet is an antiallergic medicine used in allergic conditions such as common cold, allergic rhinitis (running nose), urticaria, insect bite and hives. ",
+    price: 9,
+    id: 44,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/212362/lcz-5mg-tablet-2-1641533791.jpg?dim=320x320&dpr=1&q=100",
+    name: "Lcz 5mg Tablet",
+    description:
+      "Lcz 5mg tablet contains levocetirizine as its active ingredient. It is an anti-allergic medicine. Lcz 5 is used to treat allergic conditions such as a runny",
+    price: 34,
+    id: 45,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products_otc/192351/i-pill-tab-1-1641398682.jpg?dim=320x320&dpr=1&q=100",
+    name: "Lranpac D Strip Of 10 Tablets",
+    description: "",
+    price: 318,
+    id: 46,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/I01496/lulican-cream-2-1641531534.jpg?dim=320x320&dpr=1&q=100",
+    name: "Lulican Cream",
+
+    description:
+      "Lulican cream is a topical antifungal cream. It is used to treat fungal or yeast infections of the skin such as athlete’s foot, jock itch, ringworm, etc. It contains luliconazole. It works by destroyiCheck more medicines with composition as D-Mannose(600.0 Mg) + Cranberry(300.0 Mg)",
+    price: 223,
+    id: 47,
+  },
+  {
+    imageUrl:
+      "https://cdn01.pharmeasy.in/dam/products/I37522/mc-vit-cap-10s-2-1641538590.jpg?dim=320x320&dpr=1&q=100",
+    name: "Mc Vit Capsules 10'S",
+    description:
+      "Mc Vit Capsule is a vitamin supplement. It contains a combination of folic acid (vitamin B9), pyridoxine (vitamin B6), methylcobalamin (vitamin B12). It is used for the prevention and treatment of",
+    price: 175,
+    id: 48,
+  },
 
         ]
         localStorage.setItem("product", JSON.stringify(products))

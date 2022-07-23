@@ -37,29 +37,55 @@
                         margin-top: -70px;
                 }
 
+                .hg h3 {
+                        color: grey;
+                }
+
                 .hh h3 {
-                        /* border: 1px solid rgb(0, 255, 0); */
+
                         color: rgb(81, 80, 80);
                         font-weight: lighter;
                         margin-top: 7px;
                         padding: 2px;
                 }
 
-                .hy select {
+                .hy {
+                        /* border: 1px solid red; */
+                        margin-top: 80px;
+                }
+
+
+
+                .hg {
+                        /* border: 1px solid blue; */
+                        width: 35%;
+                        margin-left: 700px;
+                        margin-top: -80px;
+
+
+                }
+
+                .hg select {
+
+                        display: block;
+                        margin-top: -120px;
+
                         padding: 8px;
                         display: block;
                         border: 2px solid grey;
-                        margin-left: 50px;
+                        /* border: 1px solid red; */
+                        margin-left: 90px;
                         font-size: 17px;
                         background-color: transparent;
                         border-radius: 5px;
                         width: 240px;
+                        /* margin-top: 1px; */
 
                 }
 
                 #skindiv {
                         margin-top: 100px;
-                        /* border: 1px solid blue; */
+
                         width: 65%;
                         display: grid;
                         grid-template-columns: repeat(3, 270px);
@@ -96,20 +122,21 @@
                 <div>
                         <h1 class="skinc">Skin Care</h1>
                 </div>
-                <div class="hh">
+                <div class="hg">
                         <h3>Sort By</h3>
-                        <div class="hy"> <select>
+                        <div class="hy">
+                                <select class="hh">
 
 
-                                        <div class="hhh">
-                                                <option onclick="htl()" class="op1">Price high to low</option>
-                                        </div>
-                                        <div class="hhh">
-                                                <option onclick="lth()" class="op2">Price low to high</option>
-                                        </div>
-                                        <div class="hhh">
-                                                <option onclick="pop()" class="op3">Popularity</option>
-                                        </div>
+
+                                        <option value="Price high to low" class="op1">Price high to low</option>
+
+
+                                        <option value="Price low to high" class="op1">Price low to high</option>
+
+
+                                        <option value="Popular" class="op1">Popularity</option>
+
                                 </select>
                         </div>
                 </div>
@@ -266,33 +293,59 @@
 
 
 
+        let hhh = document.querySelector(".hh")
+        // console.log(hhh)
+        hhh.addEventListener("click", ll)
+        // console.log("ghghgh")
+        function ll() {
+                let ans1 = document.querySelector(".hh").value;
+                console.log(ans1)
+                if (ans1 == "Price low to high") {
+                        console.log("hihih")
+                        ans = Prod_skinCare.sort(function (a, b) {
+                                return +(a.price) - +(b.price)
 
-        function lth() {
-                ans = Prod_skinCare.sort(function (a, b) {
-                        return +(a.price) - +(b.price)
+                        })
+                        // console.log(ans)
+                        display(ans)
 
-                })
-                console.log(ans)
-                display(ans)
+                }
+                else if (ans1 == "Price high to low") {
+
+                        ans = Prod_skinCare.sort(function (a, b) {
+                                return +(b.price) - +(a.price)
+
+                        })
+                        // console.log(ans)
+                        display(ans)
+
+
+                }
+                else {
+
+                        console.log("hii")
+                        ans2 = Prod_skinCare.filter(el => el.pp === "popular");
+
+                        // console.log(ans2)
+                        display(ans2)
+
+
+
+                }
         }
 
-        function htl() {
-                ans = Prod_skinCare.sort(function (a, b) {
-                        return +(b.price) - +(a.price)
 
-                })
-                console.log(ans)
-                display(ans)
-        }
 
-        function pop() {
-                console.log("hii")
-                ans2 = Prod_skinCare.filter(el => el.pp === "popular");
 
-                console.log(ans2)
-                display(ans2)
 
-        }
+
+
+
+
+
+
+
+
         function take() {
                 console.log("ab")
         }

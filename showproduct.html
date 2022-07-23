@@ -298,10 +298,12 @@
 
   doIt(showproduct)
 
-  document.querySelector("#addtocart").addEventListener("click", dododo);
+  document.querySelector("#addtocart").addEventListener("click", ()=>{
+    dododo(showproduct.id)
+  });
 
 
-  function dododo(){
+  function dododo(show){
    let select = document.createElement("select")
    select.innerHTML = `<option value="1">1</option>
       <option value="2">2</option>
@@ -314,7 +316,7 @@
       <option value="9">9</option>`
 
       select.addEventListener("change", ()=>{
-        gotocart(select.value)
+        gotocart(select.value,show)
       })
 
    document.querySelector("#add").innerHTML = ""
@@ -329,14 +331,44 @@
   let cartproduct = JSON.parse(localStorage.getItem("cartproduct")) || []
 
 
-  function gotocart(value){
+  function gotocart(value,show){
     document.querySelector("#view_cart").style.backgroundColor = "#10847e"
+    let pro3 = {}
+    let ind = -1
 
-    let cartpro = showproduct
-    cartpro.size = value
-    cartproduct.push(cartpro)
-    localStorage.setItem("cartproduct", JSON.stringify(cartproduct))
-    console.log("kyahai", value)
+    for(let i=0;i<cartproduct.length;i++){
+        if(cartproduct[i].id == show){
+          pro3 = cartproduct[i]
+          ind = i
+        }
+    }
+
+    /* let pro3 = cartproduct.filter((ele,index)=>{
+      return ele.id == show
+    }) */
+    //console.log("ye",pro3)
+
+    if(ind>=0){
+      let min = pro3
+      min.size = value
+      //console.log(min)
+      cartproduct[ind] = min
+      localStorage.setItem("cartproduct", JSON.stringify(cartproduct))
+
+      
+    } else {
+      let cart4 = showproduct
+      cart4.size = value
+      cartproduct.push(cart4)
+      localStorage.setItem("cartproduct", JSON.stringify(cartproduct))
+
+
+    }
+    
+    
+
+    
+    
     document.querySelector("#view_cart").addEventListener("click", ()=>{
       window.location.href = "cart.html"
     })

@@ -269,7 +269,7 @@
   function poffers1() {
     console.log("ghfxfxfx")
     let totalamnt2 = document.querySelector("#cart_value")
-    let totalamnt = document.querySelector("#cart_value").innerHTML
+    let totalamnt = +document.querySelector("#cart_value").innerHTML
     console.log(totalamnt)
     if (totalamnt > 500) {
       alert("you can sucessfully apply code")
@@ -319,8 +319,10 @@
   let cartproduct = JSON.parse(localStorage.getItem("cartproduct")) || []
 
   function testit(cartproduct) {
+    document.querySelector("#show_product").innerHTML = null
 
     cartproduct.forEach((el) => {
+      let del = el.id
       let price = el.price
       let name = el.name
       let imageurl = el.imageUrl
@@ -333,14 +335,13 @@
             <div>
               <div>
                 <h4>${name}</h4>
-                <img class="del" src="https://assets.pharmeasy.in/web-assets/dist/2fb50086.svg" alt="">
+                <img id="${del}" src="https://assets.pharmeasy.in/web-assets/dist/2fb50086.svg" alt="">
               </div>
               <p>By USV PVT LTD</p>
               <p>14 Tablet(s) in Strip</p>
               <div>
                 <select name="" id="selectit">
                   <option value="${size}">Qty ${size}</option>
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -363,11 +364,11 @@
       div.innerHTML = data
       document.querySelector("#show_product").append(div)
 
-      /* document.querySelector(".del").addEventListener("click", ()=>{
+      document.getElementById(del).addEventListener("click", ()=>{
         delIt(el)
   
       
-      }) */
+      })
 
       document.querySelector("#charge").innerText = 99.57
 
@@ -401,7 +402,11 @@
 
 
   function delIt(el) {
-    console.log("del kiya", el)
+    let cartpro2 = cartproduct.filter((elem)=>{
+      return elem != el
+    })
+    localStorage.setItem("cartproduct", JSON.stringify(cartpro2))
+    window.location.reload()
   }
 
 

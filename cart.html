@@ -258,6 +258,19 @@
   document.querySelector("#con").innerHTML = footer()
 
 
+  let login3 = localStorage.getItem("login")
+        console.log(login3)
+
+        if(login3){
+                
+                let gp = document.querySelector("#log5")
+                
+                console.log(gp,"h")
+               gp.innerText = "User"
+                
+        }
+
+
 
 </script>
 <script>
@@ -408,6 +421,32 @@
     localStorage.setItem("cartproduct", JSON.stringify(cartpro2))
     window.location.reload()
   }
+
+
+
+  let address = document.querySelector("#add_address")
+  address.addEventListener("click", function(){
+    let cpa = +document.querySelector("#cart_value").innerText
+    let dpa = +document.querySelector("#charge").innerText
+    let tpa = +document.querySelector("#totalamount").innerText
+    let data = {
+      cp: cpa,
+      dp: dpa,
+      tp: tpa
+    }
+    localStorage.setItem("data", JSON.stringify(data))
+    window.location.href = "payment.html"
+    
+  })
+
+
+
+
+  
+
+
+
+  
 
 
 

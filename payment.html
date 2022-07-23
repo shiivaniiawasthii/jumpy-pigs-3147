@@ -185,9 +185,9 @@
         <div id="pricebox">
           <h3>Price Breakdown</h3>
           <h4>Cart Value : <span id="t"></span></h4>
-          <h4>Delivery Charge : Free</h4>
+          <h4 id="t1">Delivery Charge : Free</h4>
           <hr />
-          <h4>Amount to be paid : <span id="t1"></span></h4>
+          <h4>Amount to be paid : <span id="t2"></span></h4>
         </div>
       </div>
     </div>
@@ -208,10 +208,4 @@
       }
     });
   }
-</script>
-
-<script>
-  let total = JSON.parse(localStorage.getItem("cartproduct"));
-  document.getElementById("t").innerText = `₹${total}`;
-  document.getElementById("t1").innerText = `₹${total}`;
 </script>

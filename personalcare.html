@@ -1,113 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="./component/nav.css" />
-    <style>
-      #page {
-        margin-top: 200px;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-        width: 65%;
-        margin-left: 250px;
-      }
+  <link rel="stylesheet" href="./component/nav.css" />
+  <style>
+    #page {
+      margin-top: 200px;
 
-      #pt {
-        color: grey;
-      }
+      width: 65%;
+      margin-left: 250px;
+    }
 
-      .skinc {
-        color: grey;
-        margin-left: 200px;
-        margin-top: -40px;
-      }
+    #pt {
+      color: grey;
+    }
 
-      .hh {
-        /* border: 1px solid red; */
-        display: flex;
-        /* border: 1px solid blue; */
-        width: 36%;
-        margin-left: 600px;
-        margin-top: -70px;
-      }
+    .skinc {
+      color: grey;
+      margin-left: 200px;
+      margin-top: -40px;
+    }
 
-      .hh h3 {
-        /* border: 1px solid rgb(0, 255, 0); */
-        color: rgb(81, 80, 80);
-        font-weight: lighter;
-        margin-top: 7px;
-        padding: 2px;
-      }
+    .hh {
+      /* border: 1px solid red; */
+      display: flex;
+      /* border: 1px solid blue; */
+      width: 36%;
+      margin-left: 600px;
+      margin-top: -70px;
+    }
 
-      .hy select {
-        padding: 8px;
-        display: block;
-        border: 2px solid grey;
-        margin-left: 50px;
-        font-size: 17px;
-        background-color: transparent;
-        border-radius: 5px;
-        width: 240px;
-      }
+    .hh h3 {
+      /* border: 1px solid rgb(0, 255, 0); */
+      color: rgb(81, 80, 80);
+      font-weight: lighter;
+      margin-top: 7px;
+      padding: 2px;
+    }
 
-      #skindiv {
-        margin-top: 100px;
-        /* border: 1px solid blue; */
-        width: 65%;
-        display: grid;
-        grid-template-columns: repeat(3, 270px);
-        gap: 40px;
-        margin-left: 320px;
-      }
+    .hy select {
+      padding: 8px;
+      display: block;
+      border: 2px solid grey;
+      margin-left: 50px;
+      font-size: 17px;
+      background-color: transparent;
+      border-radius: 5px;
+      width: 240px;
+    }
 
-      .sk2 {
-        border: 1px solid grey;
-        /* height: 200px; */
-        padding: 10px;
-        /* cursor: pointer; */
-        border-radius: 5px;
-      }
+    #skindiv {
+      margin-top: 100px;
+      /* border: 1px solid blue; */
+      width: 65%;
+      display: grid;
+      grid-template-columns: repeat(3, 270px);
+      gap: 40px;
+      margin-left: 320px;
+    }
 
-      .sk2 img {
-        width: 150px;
-        height: 180px;
-        /* border: 1px solid blue; */
-        display: block;
-        margin: auto;
-        padding: 9px;
-      }
-    </style>
-  </head>
+    .sk2 {
+      border: 1px solid grey;
+      /* height: 200px; */
+      padding: 10px;
+      /* cursor: pointer; */
+      border-radius: 5px;
+    }
 
-  <body>
-    <nav id="nav"></nav>
-    <div id="page">
-      <p id="pt">Home>All>category></p>
-      <div>
-        <h1 class="skinc">Skin Care</h1>
-      </div>
-      <div class="hh">
-        <h3>Sort By</h3>
-        <div class="hy">
-          <select>
-            <div class="hhh">
-              <option onclick="htl()" class="op1">Price high to low</option>
-            </div>
-            <div class="hhh">
-              <option onclick="lth()" class="op2">Price low to high</option>
-            </div>
-            <div class="hhh">
-              <option onclick="pop()" class="op3">Popularity</option>
-            </div>
-          </select>
-        </div>
-      </div>
+    .sk2 img {
+      width: 150px;
+      height: 180px;
+      /* border: 1px solid blue; */
+      display: block;
+      margin: auto;
+      padding: 9px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="nav"></nav>
+  <div id="page">
+    <p id="pt">Home>All>category></p>
+    <div>
+      <h1 class="skinc">Skin Care</h1>
     </div>
-    <div id="skindiv">
-      <!-- <div class="sk2">
+    <div class="hh">
+      <h3>Sort By</h3>
+      <div class="hy">
+        <select id="gg">
+
+          <option class="op1">Price high to low</option>
+
+
+          <option class="op2">Price low to high</option>
+      </div>
+
+      <option class="op3">Popularity</option>
+
+      </select>
+    </div>
+  </div>
+  </div>
+  <div id="skindiv">
+    <!-- <div class="sk2">
                         <img
                                 src="https://cdn01.pharmeasy.in/dam/products_otc/180461/venusia-max-intensive-moisturizing-cream-for-dry-to-very-dry-skin-repairs-smoothens-skin-150g-2-1654078395.jpg">
 
@@ -115,8 +116,9 @@
                         <h4>Price</h4>
 
                 </div> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
 <script type="module">
   import navbar from "./component/navbar.js";
@@ -218,7 +220,7 @@
 
   function display(data) {
     document.querySelector("#skindiv").innerHTML = "";
-    console.log(data);
+    // console.log(data);
     data.map(function (el, index) {
       let img = document.createElement("img");
       img.src = el.imageUrl;
@@ -250,32 +252,49 @@
     });
   }
 
-  function lth() {
-    ans = Prod_skinCare.sort(function (a, b) {
-      return +a.price - +b.price;
-    });
-    console.log(ans);
-    display(data);
+
+  let gg = document.querySelector("#gg");
+
+  gg.addEventListener("click", aba)
+  function aba() {
+    ggg = document.querySelector("#gg").value
+    // console.log(ggg)
+    if (ggg == "Price low to high") {
+
+      ans = Prod_skinCare.sort(function (a, b) {
+        return +a.price - +b.price;
+      });
+      // console.log(ans);
+      display(ans);
+    }
+    else if (ggg == "Price high to low") {
+
+      ans = Prod_skinCare.sort(function (a, b) {
+        return +b.price - +a.price;
+      });
+      // console.log(ans);
+      display(ans);
+
+    } else {
+      console.log("hii");
+      ans2 = Prod_skinCare.filter((el) => el.pp === "popular");
+
+      // console.log(ans2);
+      display(ans2);
+
+
+    }
   }
 
-  function htl() {
-    ans = Prod_skinCare.sort(function (a, b) {
-      return +b.price - +a.price;
-    });
-    console.log(ans);
-    display(ans);
-  }
 
-  function pop() {
-    console.log("hii");
-    ans2 = Prod_skinCare.filter((el) => el.pp === "popular");
 
-    console.log(ans2);
-    display(ans2);
-  }
-  function take() {
-    console.log("ab");
-  }
+
+
+
+
+
+
+
   function abcd(index) {
     let localpp = [];
     localpp.push(Prod_skinCare[index]);

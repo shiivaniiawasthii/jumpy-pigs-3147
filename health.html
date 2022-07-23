@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="health.css ">
     <title>Health Products</title>
+    <link rel="stylesheet" href="./component/footer.css">
     
     <!-- <script src="https://kit.fontawesome.com/5eb914bf2e.js" crossorigin="anonymous"></script> -->
 </head>
@@ -147,6 +148,7 @@
     </div>
 
 <!---------------------------------------------------------------- Ending of the body ------------------------------------------------------------>
+<div id="foot3"></div>
 
 
 </body>
@@ -155,3 +157,7 @@
 
 <script src="health.js"></script>
 <script src="healthnew.js"></script>
+<script type="module">
+  import footer from "./component/footer.js"
+  document.getElementById("foot3").innerHTML = footer()
+</script>

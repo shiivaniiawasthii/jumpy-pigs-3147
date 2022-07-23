@@ -198,7 +198,7 @@
       <h2>OTP Verificaion</h2>
       <hr />
       <form action="" id="options">
-        <p style="color: green">An OTP has been sent to ********80</p>
+        <p style="color: green;margin-left: -10px;">An OTP has been sent to ********<span id="numD"></span></p>
         <p style="color: red">Do not leave the page</p>
         <input type="number" id="otp" placeholder="Enter OTP" />
         <a class="button" href="#popup1">Verify</a>
@@ -228,3 +228,14 @@
   src="https://kit.fontawesome.com/1d18d1cefe.js"
   crossorigin="anonymous"
 ></script>
+
+<script>
+  let num = document.querySelector("#numD")
+  let mob = localStorage.getItem("mobileNumber")
+  let mob2 = ""
+  for(let j=8;j<10;j++){
+      mob2 += mob[j]
+  }
+  
+  num.innerText = mob2
+</script>

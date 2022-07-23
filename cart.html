@@ -274,32 +274,71 @@
 
 </script>
 <script>
-  let offers1 = document.querySelector(".off2")
-  let offers2 = document.querySelector(".off3")
-  // console.log(offers1, offers2)
-  offers1.addEventListener("click", poffers1)
-  offers2.addEventListener("click", poffers2)
-  function poffers1() {
-    console.log("ghfxfxfx")
-    let totalamnt2 = document.querySelector("#cart_value")
-    let totalamnt = +document.querySelector("#cart_value").innerHTML
-    console.log(totalamnt)
-    if (totalamnt > 500) {
-      alert("you can sucessfully apply code")
-      final = Math.ceil(totalamnt - (totalamnt * .03))
-      totalamnt2.innerHTML = final
-      console.log(final)
-      let charge = +document.querySelector("#charge").innerText
-      console.log(charge)
-      let a = document.querySelector("#totalamount")
-      a.innerText = final + charge
-      // console.log(a)
+  
 
-
-    }
-    else {
+    document.querySelector("#offers").addEventListener("change", ()=>{
+      let offer = document.querySelector("#offers").value
+      let totalamnt = +document.querySelector("#cart_value").innerText
+      let totalamnt2 = document.querySelector("#cart_value")
+      if(offer == "masai30%"){
+       console.log("hi")
+           if (totalamnt > 500) {
+              alert("you can sucessfully apply code")
+              final = Math.ceil(totalamnt - (totalamnt * .03))
+              totalamnt2.innerText = final
+              console.log(final)
+              let charge = +document.querySelector("#charge").innerText
+              console.log(charge)
+              let a = document.querySelector("#totalamount")
+              a.innerText = final + charge
+      // console.log(a
+    }else {
       alert("sorry,your added amount is low to add our code")
     }
+
+      } else if(offer == "festival20%"){
+        console.log("hello")
+        if (totalamnt > 500) {
+              alert("you can sucessfully apply code")
+              final = Math.ceil(totalamnt - (totalamnt * .03))
+              totalamnt2.innerText = final
+              console.log(final)
+              let charge = +document.querySelector("#charge").innerText
+              console.log(charge)
+              let a = document.querySelector("#totalamount")
+              a.innerText = final + charge
+      // console.log(a
+    }else {
+      alert("sorry,your added amount is low to add our code")
+    }
+
+
+
+
+
+
+      }
+
+    })
+
+
+
+
+  
+  // console.log(offers1, offers2)
+  
+  function poffers1() {
+    console.log("ghfxfxfx")
+    
+    
+    console.log(totalamnt)
+    
+
+
+
+
+
+
 
   }
   function poffers2() {

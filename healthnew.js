@@ -17,7 +17,7 @@ helthcare = [
     name_url: "https://pharmeasy.in/health-care/health-food-and-drinks-648",
     offer: "Upto 57% off",
     offer_url: "https://pharmeasy.in/health-care/health-food-and-drinks-648",
-    href: "healthcare.html",
+    href: "personalcare.html",
   },
   {
     image:

@@ -25,14 +25,14 @@ let navbar=()=>{
         
         <div id="navlist">
         <div><a href="ordermedicines.html">Order Medicines</a></div>
-        <div><a href="products.html">Healthcare Products</a></div>
+        <div><a href="health.html">Healthcare Products</a></div>
         <div><a href="test.html">Lab Tests</a></div>
         <div><a href="RTPCR.html">RTPCR</a></div>
         </div>
         <div id="sidelist">
         <div><a><img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"> Offers</a>
         </div>
-        <div><a href="login.html"> <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg">Login / Signup</a></div>
+        <div > <a  id="log" href="login.html"> <img  src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg">Login / Signup</a></div>
         <div><a href="cart.html"> <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg">Cart</a></div>
         </div>`
         
@@ -41,6 +41,7 @@ let navbar=()=>{
 
 
 export default navbar
+// console.log(navbar())
 
 
 

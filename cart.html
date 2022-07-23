@@ -13,7 +13,7 @@
   <style>
     * {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      box-sizing: border-box;
+      /* box-sizing: border-box; */
     }
 
     #main {
@@ -44,7 +44,7 @@
       margin-top: -0px;
     }
 
-    
+
 
     /* cart structure part */
 
@@ -118,11 +118,11 @@
 
     /* product5 show */
     #show_product {
-      
+
       margin-bottom: 60px;
     }
 
-    #product{
+    #product {
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -132,41 +132,43 @@
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
 
-    #product>img{
+    #product>img {
       width: 11%;
       height: 24%;
       margin-left: 2%;
       margin-top: 5%;
     }
-    #product>div{
+
+    #product>div {
       width: 88%;
       height: 100%;
       padding: 2%;
     }
-    #product>div>div{
+
+    #product>div>div {
       display: flex;
       justify-content: space-between;
     }
-    #product>div>div>img{
+
+    #product>div>div>img {
       width: 20px;
       height: 20px;
     }
-    #product>div>div>h4{
+
+    #product>div>div>h4 {
       margin-top: -5px;
       margin-bottom: -15px;
     }
-    #selectit{
+
+    #selectit {
       width: 100px;
       height: 45px;
       background-color: white;
       color: black;
       font-size: medium;
-      
+
       border-radius: 5px;
     }
-
-
-
   </style>
 </head>
 
@@ -188,7 +190,7 @@
 
       <!-- show product -->
       <div id="show_product">
-           
+
       </div>
 
 
@@ -265,14 +267,21 @@
   offers1.addEventListener("click", poffers1)
   offers2.addEventListener("click", poffers2)
   function poffers1() {
-    let totalamnt2 = document.querySelector(".totalamount")
-    let totalamnt = document.querySelector(".totalamount").innerHTML
+    console.log("ghfxfxfx")
+    let totalamnt2 = document.querySelector("#cart_value")
+    let totalamnt = document.querySelector("#cart_value").innerHTML
     console.log(totalamnt)
     if (totalamnt > 500) {
       alert("you can sucessfully apply code")
-      final = totalamnt - (totalamnt * .03)
+      final = Math.ceil(totalamnt - (totalamnt * .03))
       totalamnt2.innerHTML = final
       console.log(final)
+      let charge = +document.querySelector("#charge").innerText
+      console.log(charge)
+      let a = document.querySelector("#totalamount")
+      a.innerText = final + charge
+      // console.log(a)
+
 
     }
     else {
@@ -281,14 +290,18 @@
 
   }
   function poffers2() {
-    let totalamnt2 = document.querySelector(".totalamount")
-    let totalamnt = document.querySelector(".totalamount").innerHTML
+    let totalamnt2 = document.querySelector("#cart_value")
+    let totalamnt = document.querySelector("#cart_value").innerHTML
     console.log(totalamnt)
     if (totalamnt > 400) {
       alert("you can sucessfully apply code")
-      final = totalamnt - (totalamnt * .02)
+      final = Math.ceil(totalamnt - (totalamnt * .02))
       totalamnt2.innerHTML = final
       console.log(final)
+      let charge = +document.querySelector("#charge").innerText
+      console.log(charge)
+      let a = document.querySelector("#totalamount")
+      a.innerText = final + charge
 
     }
     else {
@@ -304,9 +317,9 @@
 
   let cartproduct = JSON.parse(localStorage.getItem("cartproduct")) || []
 
-  function testit(cartproduct){
+  function testit(cartproduct) {
 
-    cartproduct.forEach((el)=>{
+    cartproduct.forEach((el) => {
       let price = el.price
       let name = el.name
       let imageurl = el.imageUrl
@@ -314,8 +327,8 @@
       //console.log(price,name,imageurl,size)
 
       let div = document.createElement("div")
-    div.id = "product"
-    let data = `<img src="${imageurl}" alt="">
+      div.id = "product"
+      let data = `<img src="${imageurl}" alt="">
             <div>
               <div>
                 <h4>${name}</h4>
@@ -339,33 +352,33 @@
                 </select>
                 <div style="display: flex;margin-top: -15px;">
                   <h3>₹</h3>
-                  <h3 id="pro_price">${price*size}</h3>
+                  <h3 id="pro_price">${price * size}</h3>
                   <h3>*</h3>
                 </div>
               </div>
               <p>delivery by 23 JUL - 25  JUL</p>            
             </div>`
 
-           div.innerHTML = data
-    document.querySelector("#show_product").append(div)
+      div.innerHTML = data
+      document.querySelector("#show_product").append(div)
 
-    /* document.querySelector(".del").addEventListener("click", ()=>{
-      delIt(el)
+      /* document.querySelector(".del").addEventListener("click", ()=>{
+        delIt(el)
+  
+      
+      }) */
 
-    
-    }) */
+      document.querySelector("#charge").innerText = 99.57
 
-    document.querySelector("#charge").innerText = 99.57
+      let cartValue = +document.querySelector("#cart_value").innerText
+      document.querySelector("#cart_value").innerText = cartValue + (price * size)
 
-    let cartValue = +document.querySelector("#cart_value").innerText
-    document.querySelector("#cart_value").innerText = cartValue + (price*size)
-
-    let totalValue = +document.querySelector("#totalamount").innerText
-    document.querySelector("#totalamount").innerText = totalValue + (price*size) 
+      let totalValue = +document.querySelector("#totalamount").innerText
+      document.querySelector("#totalamount").innerText = totalValue + (price * size)
 
     })
 
-    
+
 
     let charge = +document.querySelector("#charge").innerText
     let total = +document.querySelector("#totalamount").innerText
@@ -377,19 +390,19 @@
 
     /* items */
     document.querySelector("#items_count").innerText = `${cartproduct.length} Items In Cart`
-    
-    
-    
-          
+
+
+
+
   }
 
   testit(cartproduct)
 
 
-  function delIt(el){
-    console.log("del kiya",el)
+  function delIt(el) {
+    console.log("del kiya", el)
   }
 
-  
+
 
 </script>

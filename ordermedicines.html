@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./component/footer.css">
+  <link rel="stylesheet" href="./component/nav.css">
   <style>
     #main {
       width: 80%;
@@ -229,6 +231,9 @@
       font-family: Open Sans, sans-serif !important;
       font-weight: 600;
     }
+    #cccc{
+      margin-top: 170px;
+    }
 
     /* h2{
   color: rgb(101, 100, 100);
@@ -237,8 +242,14 @@
 </head>
 
 <body>
+  <nav id="nav">
+
+  </nav>
+  
+
+
   <div>
-    <h1>Order Medicines Online</h1>
+    <h1 id="cccc">Order Medicines Online</h1>
     <div id="main">
       <div id="search_box">
         <div class="highlight">
@@ -532,6 +543,17 @@
       </p>
     </div>
   </div>
+  <div id="foot3"></div>
 </body>
 
+
+
 </html>
+
+<script type="module">
+  import footer from "./component/footer.js"
+  document.getElementById("foot3").innerHTML = footer()
+  import navbar from "./component/navbar.js"
+  document.getElementById("nav").innerHTML = navbar()
+
+</script>

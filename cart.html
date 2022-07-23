@@ -291,7 +291,8 @@
   }
   function poffers2() {
     let totalamnt2 = document.querySelector("#cart_value")
-    let totalamnt = document.querySelector("#cart_value").innerHTML
+    let totalamnt = +document.querySelector("#cart_value").innerHTML
+    console.log(totalamnt2, totalamnt)
     console.log(totalamnt)
     if (totalamnt > 400) {
       alert("you can sucessfully apply code")

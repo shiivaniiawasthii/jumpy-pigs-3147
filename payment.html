@@ -211,7 +211,7 @@
 </script>
 
 <script>
-  let total = localStorage.getItem("#");
-  document.getElementById("t").innerText = `₹${"#"}`;
-  document.getElementById("t1").innerText = `₹${"#"}`;
+  let total = JSON.parse(localStorage.getItem("cartproduct"));
+  document.getElementById("t").innerText = `₹${total}`;
+  document.getElementById("t1").innerText = `₹${total}`;
 </script>
